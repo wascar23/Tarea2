@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+.calculator h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 120px;
+  padding: 10px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #6c63ff;
+}
+
+.buttons {
+  margin: 15px 0;
+}
+
+.buttons button {
+  padding: 12px 18px;
+  margin: 8px 5px;
+  font-size: 18px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #5548c8;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  color: #444;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#historial {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  margin: 10px 0;
+}
+
+#historial li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #222;
+}
+
+button[onclick="limpiarHistorial()"] {
+  background-color: #ff4d4d;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[onclick="limpiarHistorial()"]:hover {
+  background-color: #cc0000;
+}
